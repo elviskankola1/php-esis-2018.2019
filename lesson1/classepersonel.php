@@ -66,7 +66,7 @@
 
     $nom_audi = strip_tags(trim($_POST['nom']));
     $prof_audi = strip_tags(trim($_POST['prof']));
-
+    $nb_etu = strip_tags(trim($_POST['nb']));
 
 
 
