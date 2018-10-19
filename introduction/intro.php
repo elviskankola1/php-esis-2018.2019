@@ -6,6 +6,8 @@
 	if(!isset($_POST['recherche']) || empty($_POST['recherche']) )
 	{
 		echo "<br><br><br><h6 style="color:red;">entrez un mot svp!<h6>";
+	}else {
+		echo"vous recherchez ce mot?".$_POST['recherche'];
 	}
 	
 ?>
