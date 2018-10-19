@@ -1,6 +1,7 @@
 <?php
    class simple_class {
        
+//=======================================ATTRIBUTS DE CLASSE======================================
     private $nom_auditoire;
     private $professeur_auditoire;
     private $nb_eleve_auditoire;
