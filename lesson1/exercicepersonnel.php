@@ -15,5 +15,5 @@
         echo($tab[$i])."<br><br>";
     }
 //=================================================================================================================
-/*vive le web, vive github, vive git tout ca grace a vscode! (lol) */
+/*vive le web, vive github, vive git (lol) */
 ?>
