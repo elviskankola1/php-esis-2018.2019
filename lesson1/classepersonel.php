@@ -47,13 +47,7 @@
    }
    //===========================FIN DE LA CLASSE ===================================
    echo "=====================================================CREATION D'UN OBJET======================";
-   $a = new simple_class("genie logiciel","Mr Deoel",92);
-   $b = $a->dir_aud();
-   print("<br><br>".$b);
-   $c = $a->dir_prof();
-   print("<br><br>".$c);
-   $d = $a->dir_nb();
-   print("<br><br>".$d);
+
 ?>
    <form method="post">
         <input type ="text" name="nom">
@@ -64,9 +58,19 @@
    </form>
 <?php
 
-    $nom_audi = strip_tags(trim($_POST['nom']));
-    $prof_audi = strip_tags(trim($_POST['prof']));
-    $nb_etu = strip_tags(trim($_POST['nb']));
+    if (empty($_POST['nom']) || empty($_POST['prof']) || empty($_POST['nb']) || !isset($_POST['nom']) || !isset($_POST['prof']) || !isset(($_POST['nb'])) {
+        
+        print("entrez des informations souhaitees svp!");
+    }else {
+
+        $a = new simple_class($_POST['nom'],$_POST['prof'],$_POST['nb']);
+        $b = $a->dir_aud();
+        print("<br><br>".$b);
+        $c = $a->dir_prof();
+        print("<br><br>".$c);
+        $d = $a->dir_nb();
+        print("<br><br>".$d);
+    }
 
 
 
