@@ -46,19 +46,19 @@
 
    }
    //===========================FIN DE LA CLASSE ===================================
-   echo "=====================================================CREATION D'UN OBJET======================";
+   echo "<br><br><br><br>=====================================================TEST==============================================================<br><br><br><br><br>";
 
 ?>
    <form method="post">
-        <input type ="text" name="nom">
-        <input type ="text" name="prof">
-        <input type ="number" name="nb">
+        <input type ="text" name="nom"  placeholder="entrez le nom de la filiere" required>
+        <input type ="text" name="prof"  placeholder="entrez le nom du prof" required>
+        <input type ="number" name="nb"  placeholder="entrez le nombre des etudiant"  required>
         <input type ="submit" value ="try">
    
    </form>
 <?php
 
-    if (empty($_POST['nom']) || empty($_POST['prof']) || empty($_POST['nb']) || !isset($_POST['nom']) || !isset($_POST['prof']) || !isset(($_POST['nb'])) {
+    if (empty($_POST['nom']) || empty($_POST['prof']) || empty($_POST['nb']) || !isset($_POST['nom']) || !isset($_POST['prof']) || !isset($_POST['nb'])) {
         
         print("entrez des informations souhaitees svp!");
     }else {
