@@ -1,5 +1,19 @@
 <?php
-//============================================FUNCTION'S===========================================================
+//============================================FUNCTION'S===================================================================
+    function write_mail_cor(string $mail){
+            
+        if (empty($mail) || $mail == null) {
+            
+            return FALSE;
+        }
+        if(preg_match("#^[a-z0-9]+@[a-z]{2,6}+.[a-z]{2,4}$#i",$mail)){
+
+            return "<br><hr>bonne adresse mail";
+        }else{
+            return "mauvais adresse mail";
+        }
+    }
+
     function bonjour_genie_log(){
         return "bonjour denie logiciel";
     }
@@ -33,21 +47,7 @@
 
     }
 
-    function write_mail_cor(string $mail){
-        
-        if (empty($mail) || $mail == null) {
-            
-            return FALSE;
-        }
-        if(preg_match("#^[a-z0-9]+@[a-z]{2,6}+.[a-z]{2,4}$#i",$mail)){
-
-            return "<br><hr>bonne adresse mail";
-        }else{
-            return "mauvais adresse mail";
-        }
-    }
-    $test =  write_mail_cor('elviskankola1@gmail.com');
-    print($test);
+    
 
 //=================================================================================================================
 /*vive le web, vive github, vive git (lol) */
