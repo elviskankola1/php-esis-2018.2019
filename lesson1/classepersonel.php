@@ -34,10 +34,10 @@
     }
 //=========================================ACTION'S=================================================
     public function dir_aud(){
-        return "Vous etes dans l'auditoire :".$this->nom_auditoire;
+        return "Vous etes dans l'auditoire : ".$this->nom_auditoire;
     }
     public function dir_prof(){
-        return "le prof qui vous enseigne est :".$this->professeur_auditoire;
+        return "le prof qui vous enseigne est : ".$this->professeur_auditoire;
     }
     public function dir_nb(){
          return "et le nombre des etudiants est : ".$this->nb_eleve_auditoire;
@@ -46,9 +46,10 @@
 
    }
    //===========================CREATION DE MON OBJET simple_class===================================
+   echo "=====================================================CREATION D'UN OBJET======================";
    $a = new simple_class("genie logiciel","Mr Deoel",92);
    $b = $a->dir_aud();
-   print($b);
+   print(<br><br>.$b);
    $c = $a->dir_prof();
    print("<br><br>".$c);
    $d = $a->dir_nb();
