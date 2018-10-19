@@ -7,7 +7,7 @@
 	{
 		echo "<br><br><br><h6 style="color:red;">entrez un mot svp!<h6>";
 	}else {
-		echo"vous recherchez ce mot?".$_POST['recherche'];
+		echo"<h1 style="color:blue;">vous recherchez ce mot?".$_POST['recherche'];
 	}
 	
 ?>
