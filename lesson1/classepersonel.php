@@ -49,9 +49,27 @@
    echo "=====================================================CREATION D'UN OBJET======================";
    $a = new simple_class("genie logiciel","Mr Deoel",92);
    $b = $a->dir_aud();
-   print(<br><br>.$b);
+   print("<br><br>".$b);
    $c = $a->dir_prof();
    print("<br><br>".$c);
    $d = $a->dir_nb();
    print("<br><br>".$d);
+?>
+   <form method="post">
+        <input type ="text" name="nom">
+        <input type ="text" name="prof">
+        <input type ="number" name="nb">
+        <input type ="submit" value ="try">
+   
+   </form>
+<?php
+
+
+
+
+
+
+
+
+?>
     
