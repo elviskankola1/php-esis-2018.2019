@@ -39,7 +39,9 @@
     public function dir_prof(){
         return "le prof qui vous enseigne est :".$this->professeur_auditoire;
     }
-    public function
+    public function dir_nb(){
+         return "et le nombre des etudiants est :".$this->nb_eleve_auditoire;
+    }
 
 
    }
