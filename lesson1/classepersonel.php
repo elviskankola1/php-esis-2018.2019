@@ -40,7 +40,7 @@
         return "le prof qui vous enseigne est :".$this->professeur_auditoire;
     }
     public function dir_nb(){
-         return "et le nombre des etudiants est :".$this->nb_eleve_auditoire;
+         return "et le nombre des etudiants est : ".$this->nb_eleve_auditoire;
     }
 
 
@@ -51,5 +51,6 @@
    print($b);
    $c = $a->dir_prof();
    print("<br><br>".$c);
-   $d = 
+   $d = $a->dir_nb();
+   print("<br><br>".$d);
     
