@@ -45,4 +45,8 @@
 
 
    }
+   //===========================CREATION DE MON OBJET simple_class===================================
+   $a= new simple_class("genie logiciel","Mr Deoel",92);
+   $b = $a->dir_aud();
+   print($b);
     
