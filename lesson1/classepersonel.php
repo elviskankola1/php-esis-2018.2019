@@ -45,7 +45,7 @@
 
 
    }
-   //===========================CREATION DE MON OBJET simple_class===================================
+   //===========================FIN DE LA CLASSE ===================================
    echo "=====================================================CREATION D'UN OBJET======================";
    $a = new simple_class("genie logiciel","Mr Deoel",92);
    $b = $a->dir_aud();
@@ -66,7 +66,7 @@
 
     $nom_audi = strip_tags(trim($_POST['nom']));
     $prof_audi = strip_tags(trim($_POST['prof']));
-    
+
 
 
 
