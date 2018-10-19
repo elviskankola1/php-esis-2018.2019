@@ -3,11 +3,10 @@
 	<input type="text" name="recherche" />
 </form>
 <?php
-	if(!isset($_POST['recherche']) || empty($_POST['recherche']) )
-	{
-		echo "<br><br><br><h6 style="color:red;">entrez un mot svp!<h6>";
+	if(!isset($_POST['recherche']) || empty($_POST['recherche']) ){
+		echo "<h1 style='color:red;'>entrez un mot svp!";
 	}else {
-		echo"<h1 style="color:blue;">vous recherchez ce mot?".$_POST['recherche'];
+		echo"<h1>vous recherchez ce mot?  ".$_POST['recherche'];
 	}
 	
 ?>
