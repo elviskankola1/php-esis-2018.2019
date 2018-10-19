@@ -33,7 +33,13 @@
         return $this->nb_eleve_auditoire;
     }
 //=========================================ACTION'S=================================================
-
+    public function dir_aud(){
+        return "Vous etes dans l'auditoire ".$this->nom_auditoire;
+    }
+    public function dir_prof(){
+        return "le prof qui vous enseigne est :".$this->professeur_auditoire;
+    }
+    public function
 
 
    }
