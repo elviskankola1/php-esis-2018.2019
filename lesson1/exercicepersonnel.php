@@ -9,7 +9,7 @@
          return $s;
     }
   // ==============================================ARRAY============================================================
-    $tab = array('elvis','kankola','tshibala','valentin','html','python','ville');
+    $tab = array('google','facebook','php','code','windows','amazon','inspire-moi');
     $taille = count($tab);
     for ($i=0; $i < $taille; $i++) { 
         echo($tab[$i])."<br><br>";
