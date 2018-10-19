@@ -64,6 +64,9 @@
    </form>
 <?php
 
+    $nom_audi = strip_tags(trim($_POST['nom']));
+    $prof_audi = strip_tags(trim($_POST['prof']));
+    
 
 
 
