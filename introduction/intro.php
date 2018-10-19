@@ -3,10 +3,9 @@
 	<input type="text" name="recherche" />
 </form>
 <?php
-	if(isset($_POST['recherche']))
+	if(!isset($_POST['recherche']) || empty($_POST['recherche']) )
 	{
-		$recherche = $_POST['recherche'];
-		echo "Bonjour, vous cherchez :  $recherche";
+		
 	}
 	
 ?>
