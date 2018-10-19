@@ -12,6 +12,8 @@
     $tab = array('elvis','kankola','tshibala','valentin','html','python','ville');
     $taille = count($tab);
     for ($i=0; $i < $taille; $i++) { 
-        print(tab[$i]);
+        echo($tab[$i])."<br><br>";
     }
+//=================================================================================================================
+/*vive le web, vive github, vive git tout ca grace a vscode! (lol) */
 ?>
