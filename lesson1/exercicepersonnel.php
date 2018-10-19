@@ -12,7 +12,7 @@
     $tab = array('google','facebook','php','code','windows','amazon','inspires-moi');
     $taille = count($tab);
     for ($i=0; $i < $taille; $i++) { 
-        echo "<h1>".($tab[$i])."<br><br><hr>";
+        echo "<hr><h1>".($tab[$i])."<br><br>";
     }
     //----------------------------------------
     $table = array(
@@ -25,12 +25,29 @@
     foreach ($table as $key => $value) {
         
         if ($value == "ROI") {
-            echo $key;
+            echo "<br><hr>".$key;
+            break;
         }else {
             echo "mauvais identifiant!";
         }
 
     }
+
+    function write_mail_cor(string $mail){
+        
+        if (empty($mail) || $mail == null) {
+            
+            return FALSE;
+        }
+        if(preg_match("#^[a-z0-9]+@[a-z]{2,6}+.[a-z]{2,4}$#i",$mail)){
+
+            return "<br><hr>bonne adresse mail";
+        }else{
+            return "mauvais adresse mail";
+        }
+    }
+    $test =  write_mail_cor('elviskankola1@gmail.com');
+    print($test);
 
 //=================================================================================================================
 /*vive le web, vive github, vive git (lol) */
