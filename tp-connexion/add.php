@@ -1,6 +1,6 @@
 <?php
+    $db = new PDO('mysql:host=localhost;dbname=data-try','root','');
     if ($_SERVER['REQUEST_METHOD']=='POST') {
-        
         $pseudo = strip_tags(trim($_POST['pseudo']));
         $pwd = strip_tags(trim($_POST['pwd']));
         $pwdc = strip_tags(trim($_POST['pwdc']));
@@ -10,15 +10,12 @@
             
             header('location:uiadd.php');
         }else{
-            $db = new PDO('mysql:host=localhost;dbname=data-try','root','');
-            $query = $db->prepare('INSERT INTO user(pseudo,pwd,sexe,mail) VALUES (:pseudo,:pwd,:sexe,:mail)');
-            $query->execute([':pseudo'=>$pseudo,':pwd'=>$pwd,':sexe'=>$sexe,':mail'=>$adressemail]);
+            if ($pwd === $pwdc) {
+                $query = $db->prepare('INSERT INTO user(pseudo,pwd,sexe,mail) VALUES (:pseudo,:pwd,:sexe,:mail)');
+                $query->execute([':pseudo'=>$pseudo,':pwd'=>$pwd,':sexe'=>$sexe,':mail'=>$adressemail]);
+            }else {
+                header('location:uiadd.php');
+            }
+            
         }
-
-
-
-
-
-
-
     }
