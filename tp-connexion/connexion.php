@@ -1,14 +1,14 @@
 <?php
-     $db = new PDO('mysql:host=localhost;dbname=data-try','root','');
+
      if ($_SERVER['REQUEST_METHOD'] =='POST') {
+        $db = new PDO('mysql:host=localhost;dbname=data-try','root','');
         $pseudo = strip_tags(trim($_POST['pseudo']));
-        $pwd = sha1(strip_tags(trim($_POST['pwd'])));
-        $user = $db->prepare("SELECT pseudo,pwd INTO user WHERE pseudo= $pseudo AND pwd =$pwd");
-        if ($user) {
+        $pwd = strip_tags(trim($_POST['pwd']));
+        $query = $db->query("SELECT * FROM user WHERE pseudo = $pseudo AND pwd =$pwd");
+        if ($query == true) {
             echo "COMPTE VALIDE";
         }else{
-            $_SERVER['HTTP_REFERER'];
+            echo 'Null';
         }
-        echo $user->pseudo;
 
      }
